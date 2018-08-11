@@ -1,0 +1,15 @@
+{
+    "name": "sfreact/sfreact",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nacho Martín",
+            "email": "nacho@limenius.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "symfony/process": "^4.2@dev"
+    }
+}
