@@ -8,10 +8,10 @@ use Nacmartin\PhpExecJs\PhpExecJs;
 
 $phpexecjs = new PhpExecJs();
 
-$phpexecjs->createContextFromFile(__DIR__.DIRECTORY_SEPARATOR.'app.js');
+$phpexecjs->createContextFromFile(__DIR__.DIRECTORY_SEPARATOR.'dist'.DIRECTORY_SEPARATOR.'main.js');
 
 $variant = <<<JS
-sum(1, 1);
+sumSpy(3, 4);
 JS;
 
 $result = $phpexecjs->evalJs($variant);
