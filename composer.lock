@@ -4,8 +4,44 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed68845231302618a117cfc53c4388d4",
+    "content-hash": "5538ea362cd9e2de5e7efbf509eff8f0",
     "packages": [
+        {
+            "name": "nacmartin/phpexecjs",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nacmartin/phpexecjs.git",
+                "reference": "abb8566e4e5d079e30312e72b33bcf01e09990d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nacmartin/phpexecjs/zipball/abb8566e4e5d079e30312e72b33bcf01e09990d9",
+                "reference": "abb8566e4e5d079e30312e72b33bcf01e09990d9",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/process": "~2.3|~3.0|^4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Nacmartin\\PhpExecJs": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nacho",
+                    "email": "nacho@limenius.com"
+                }
+            ],
+            "description": "Run JavaScript code from PHP",
+            "time": "2017-11-22T20:17:42+00:00"
+        },
         {
             "name": "symfony/process",
             "version": "dev-master",
@@ -60,7 +96,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "symfony/process": 20
+        "symfony/process": 20,
+        "nacmartin/phpexecjs": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
