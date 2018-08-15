@@ -1,0 +1,3 @@
+secret-agent:
+  path: /secret-agent
+  controller: App\Controller\SecretAgentController::code
