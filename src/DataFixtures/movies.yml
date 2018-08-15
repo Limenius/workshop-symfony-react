@@ -1,0 +1,17 @@
+movies:
+    -
+        name: 'Dr. No'
+        slug: 'dr-no'
+        image: 'dr-no.jpg'
+    -
+        name: 'From Russia With Love'
+        slug: 'from-russia'
+        image: 'from-russia.jpg'
+    -
+        name: 'Goldfinger'
+        slug: 'goldfinger'
+        image: 'goldfinger.jpg'
+    -
+        name: 'Thunderball'
+        slug: 'thunderball'
+        image: 'thunderball.jpg'
