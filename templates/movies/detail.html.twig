@@ -1,5 +1,10 @@
 {% extends 'base.html.twig' %}
 
+{% set movie = react_component_array('MoviesApp', {'props': props}) %}
+{% block title %}
+{{ movie.title is defined ? movie.title | raw : '' }}
+{% endblock title %}
+
 {% block body %}
-{{ react_component('MoviesApp', {'props': props}) }}
+{{ movie.componentHtml | raw }}
 {% endblock %}

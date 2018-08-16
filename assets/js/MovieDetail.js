@@ -1,6 +1,7 @@
 import React from "react";
 import MovieComponent from "./MovieComponent";
 import { Link } from "react-router-dom";
+import Helmet from "react-helmet";
 
 export default class MovieDetail extends React.Component {
   constructor(props) {
@@ -31,6 +32,9 @@ export default class MovieDetail extends React.Component {
     }
     return (
       <div>
+        <Helmet>
+          <title>{this.state.movie.name}</title>
+        </Helmet>
         <Link to="/">Back to list</Link>
         <MovieComponent movie={this.state.movie} />
       </div>
