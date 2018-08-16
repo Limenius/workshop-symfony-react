@@ -1,8 +1,9 @@
 limenius_react:
     default_rendering: "both"
-    
+
     serverside_rendering:
         trace: true
         fail-loud: true
-        mode: "phpexecjs"
+        mode: "external_server"
         server_bundle_path: "%kernel.project_dir%/var/webpack/app.js"
+        server_socket_path: "%kernel.project_dir%/var/node.sock"
