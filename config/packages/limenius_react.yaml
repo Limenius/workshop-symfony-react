@@ -1,2 +1,8 @@
 limenius_react:
-    default_rendering: "client_side"
+    default_rendering: "both"
+    
+    serverside_rendering:
+        trace: true
+        fail-loud: true
+        mode: "phpexecjs"
+        server_bundle_path: "%kernel.project_dir%/var/webpack/app.js"
