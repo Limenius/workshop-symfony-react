@@ -2,6 +2,7 @@ var Encore = require("@symfony/webpack-encore");
 
 Encore.setOutputPath("var/webpack/")
   .setPublicPath("/")
-  .addEntry("server-bundle", "./assets/js/app.js");
+  .addEntry("app", "./assets/js/app.js")
+  .enableReactPreset();
 
 module.exports = Encore.getWebpackConfig();

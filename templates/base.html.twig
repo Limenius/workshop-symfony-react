@@ -2,11 +2,11 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block title %}<title>I am a generic title!</title>{% endblock %}
+        <link rel="stylesheet" href="{{ asset('build/app.css') }}">
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
     </body>
+    <script src="{{ asset('build/app.js') }}"></script>
 </html>
