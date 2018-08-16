@@ -1,5 +1,5 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-{{ props|json_encode() }}
+{{ react_component('MovieList', {'props': props}) }}
 {% endblock %}

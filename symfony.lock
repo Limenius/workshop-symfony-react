@@ -83,6 +83,12 @@
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
+    "limenius/react-bundle": {
+        "version": "v2.1.0"
+    },
+    "limenius/react-renderer": {
+        "version": "v2.1.2"
+    },
     "monolog/monolog": {
         "version": "1.23.0"
     },

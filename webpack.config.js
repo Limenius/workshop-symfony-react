@@ -6,6 +6,7 @@ Encore.setOutputPath("public/build/")
   .cleanupOutputBeforeBuild()
   .enableBuildNotifications()
   .enableSourceMaps(!Encore.isProduction())
-  .enableVersioning(Encore.isProduction());
+  .enableVersioning(Encore.isProduction())
+  .enableReactPreset();
 
 module.exports = Encore.getWebpackConfig();
