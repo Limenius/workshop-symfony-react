@@ -1,6 +1,4 @@
 import ReactOnRails from "react-on-rails";
-import MovieList from "./MovieList";
-import MovieDetail from "./MovieDetail";
+import MoviesApp from "./MoviesApp";
 
-ReactOnRails.register({ MovieList });
-ReactOnRails.register({ MovieDetail });
+ReactOnRails.register({ MoviesApp });
