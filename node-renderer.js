@@ -12,17 +12,27 @@ function Handler() {
   this.initialized = false;
 }
 
-Handler.prototype.handle = function(connection) {
-  var callback = function() {
-    connection.setEncoding("utf8");
-    connection.on("data", data => {
-      var result = eval(data);
-      console.log("Processing one request");
-      connection.write(result);
-      connection.end();
-    });
-  };
 
+Handler.prototype.handle = function(connection) {
+
+  var callback = function () {
+      connection.setEncoding('utf8');
+  
+      let data = [];
+      let lastChar;
+      connection.on('data', (chunk)=> {
+          data.push(chunk);
+          lastChar = chunk.substr(chunk.length - 1);
+  
+          if(lastChar === '\0') {
+            data = data.join('');
+            let result = eval(data.slice(0, -1));
+            connection.write(result);
+            console.log("Request processed");
+            connection.end();
+          }
+      });
+  };
   if (this.initialized) {
     callback();
   } else {
